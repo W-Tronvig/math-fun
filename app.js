@@ -39,22 +39,23 @@ testSum();
 
 /////////////////////////////////////
 /* Problem 2
-Write a function called multiply() that takes in two numbers 
-as arguments and returns an array where the first element is the 
-product of those numbers, and the second element is a string 
-that EXACTLY follows this example and uses the values that 
+Write a function called multiply() that takes in two numbers
+as arguments and returns an array where the first element is the
+product of those numbers, and the second element is a string
+that EXACTLY follows this example and uses the values that
 were input into the function:
 
 "The product of 5 and 9 is 45."
 */
 
 // Write your code here
-function multiply(a,b){ //eslint-disable-line
-
+function multiply(num,num2) {
+    const numProduct = num * num2;
+    return [numProduct, 'The product of ' + num + ' and ' + num2 + ' is ' + numProduct + '.'];
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply();
+testMultiply();
 
 
 /////////////////////////////////////
