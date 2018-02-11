@@ -121,7 +121,7 @@ function sumArray(testArray){ //eslint-disable-line
     // need to create variable that is effected by loop and starts at 0.
     for (let counter = 0; counter < testArray.length; counter++)
     { // let counter = 0 is the initializer, counter < testArray.length is the condition which will let us exit the loop once false, counter++ updates the initial state each time the loop runs.
-        finalArray = sum(finalArray, testArray[counter])[0]; // sums finalArray 
+        finalArray = sum(finalArray, testArray[counter])[0];
     }
     return [finalArray, testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + finalArray + ' is their sum.'];//finalArray is equal to the total number of items in the array (i.e. index 0, 1, and 2), testArray[0] is equal to number 2, testArray[1] is equal to number 3, testArray[2] is equal to number 4.
 
@@ -157,8 +157,12 @@ new branch for your work on the next question!
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
-
+    let finalArray = 1;
+    for (let counter = 0; counter < testArray.length; counter++)
+    {
+        finalArray = multiply(finalArray, testArray[counter])[0];
+    }
+    return [finalArray, 'The numbers, ' + testArray,' have a product of ' + finalArray + '.'];
 }
-
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray();
+testMultiplyArray();
