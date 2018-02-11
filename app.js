@@ -162,7 +162,7 @@ function multiplyArray(num){ //eslint-disable-line
     console.log(productOfTwo);
     const productOfThree = multiply(productOfTwo, num[2])[0];
     console.log(productOfThree);
-    return [productOfThree, 'The numbers,' + num + ' have a product of ' + productOfThree + '.'];
+    return [productOfThree, 'The numbers ' + num + ' have a product of ' + productOfThree + '.'];
 }
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray();
